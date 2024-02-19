@@ -28,4 +28,26 @@ except ValueError as error:
 except Exception as error:
     print(f"Exception occurred: {error}")
 finally:
-    print("End the program")
+    print("End the first program")
+
+# Task2
+# Користувач вводить два числа. Визначити, чи рівні ці числа, і якщо ні,
+# то вивести їх на екран в прорядку зростання
+
+try:
+    n1 = int(input("Enter the first digit number: "))
+    n2 = int(input("Enter the second digit number: "))
+    if n1 > n2:
+        print(f"{n2}, {n1}")
+    elif n2 > n1:
+        print(f"{n1}, {n2}")
+    else:
+        print("They are equal")
+except ValueError as error:
+    print("Enter only the numbers")
+    print(f"VallueError: {error}")
+except Exception as error:
+    print(f"Exception occurred: {error}")
+finally:
+    print("End the second program")
+
