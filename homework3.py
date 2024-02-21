@@ -19,6 +19,8 @@ try:
             print("saturday")
         case 7:
             print("sunday")
+        case _:
+            print("incorrect choice")
 except ValueError as error:
     print("Enter only the indicated numbers")
     print(f"VallueError: {error}")
@@ -66,6 +68,8 @@ try:
             result = n1 * n2
         case '/':
             result = n1 / n2
+        case _:
+            print("Incorrect choice")
     print(f"{result}")
 except ValueError as error:
     print("Enter only the numbers")
