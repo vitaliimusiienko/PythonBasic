@@ -4,22 +4,21 @@
 
 try:
     action = int(input("Enter a number from 1 to 7 to display the name of the day of the week: "))
-    if action == 1:
-        print("Monday")
-    elif action == 2:
-        print("Tuesday")
-    elif action == 3:
-        print("Wednasday")
-    elif action == 4:
-        print("Thurday")
-    elif action == 5:
-        print("Friday")
-    elif action == 6:
-        print("Suturday")
-    elif action == 7:
-        print("Sunday")
-    else:
-        print("Incorrect action!")
+    match action:
+        case 1:
+            print("monday")
+        case 2:
+            print("thuesday")
+        case 3:
+            print("wednesday")
+        case 4:
+            print("thursday")
+        case 5:
+            print("friday")
+        case 6:
+            print("saturday")
+        case 7:
+            print("sunday")
 except ValueError as error:
     print("Enter only the indicated numbers")
     print(f"VallueError: {error}")
@@ -58,17 +57,15 @@ try:
     n1 = int(input("Enter the first digit number: "))
     n2 = int(input("Enter the second digit number: "))
     action = input("Enter what mathematical operation you want to perform: ")
-    if action == "+":
-        result = n1 + n2
-    elif action == "-":
-        result = n1 - n2
-    elif action == "*":
-        result = n1 * n2
-    elif action == "/":
-        result = n1 / n2
-    else:
-        print(f"{action} is not valid operation"
-              f"please enter the commands +-* or /")
+    match action:
+        case '+':
+            result = n1 + n2
+        case '-':
+            result = n1 - n2
+        case '*':
+            result = n1 * n2
+        case '/':
+            result = n1 / n2
     print(f"{result}")
 except ValueError as error:
     print("Enter only the numbers")
