@@ -70,7 +70,7 @@ finally:
 text = "Крапка також може зустрічатися в літералах із плаваючою комою та уявних літералах."
 print(text[2])
 print(text[-2])
-print(text[0:4])
+print(text[0:5])
 print(text[:-2])
 print(text[::2])
 print(text[1::2])
