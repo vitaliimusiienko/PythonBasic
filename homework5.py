@@ -54,3 +54,33 @@ print(f"The sum of odd numbers: {odd_numbers}")
 print(f"Multiplication of elements with multiple indices 3: {mult_index_numbers}")
 print(f"Multiplication of elements between the minimum and maximum element: {mult_min_max_numbers}")
 print(f"The sum of the elements between the first and the last positive element: {sum_positive_num}")
+# Task2
+# Є список цілих, заповнений випадковими числами.
+# На підставі даних цього масиву потрібно:
+# ■ Створити список цілих, що містить лише парні числа з першого списку;
+# ■ Створити список цілих, що містить лише непарні числа з першого списку;
+# ■ Створити список цілих, що містить лише негативні числа з першого списку;
+# ■ Створити список цілих, що містить лише позитивні числа з першого списку.
+numbers = []
+num_size = 10
+numbers_even = []
+numbers_odd = []
+numbers_negative = []
+numbers_positive = []
+for i in range(num_size):
+    numbers.append(random.randint(-10, 10))
+print(numbers)
+i = 0
+for i in range(num_size):
+    if numbers[i] % 2 == 0:
+        numbers_even.append(numbers[i])
+    if numbers[i] % 2 != 0:
+        numbers_odd.append(numbers[i])
+    if numbers[i] < 0:
+        numbers_negative.append(numbers[i])
+    if numbers[i] > 0:
+        numbers_positive.append(numbers[i])
+print(f"even: {numbers_even}")
+print(f"odd: {numbers_odd}")
+print(f"negative: {numbers_negative}")
+print(f"positive: {numbers_positive}")
