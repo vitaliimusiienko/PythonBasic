@@ -30,9 +30,11 @@ for number in numbers:
         odd_numbers += number
 
 index3_num = numbers[3::3]
+i = 0
+number = i
 mult_index_numbers = 1
-for i in index3_num:
-    mult_index_numbers *= i
+for number in index3_num:
+    mult_index_numbers *= number
 
 mult_min_max_numbers = 0
 min_number_index = numbers.index(min(numbers))
@@ -43,8 +45,8 @@ if min_number_index > max_number_index:
 
 num_size_min_max = numbers[min_number_index + 1: max_number_index]
 mult_min_max_numbers = 1
-for i in num_size_min_max:
-    mult_min_max_numbers *= i
+for number in num_size_min_max:
+    mult_min_max_numbers *= number
 
 first_positive_index = 0
 last_positive_index = 0
