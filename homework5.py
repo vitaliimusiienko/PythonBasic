@@ -10,7 +10,6 @@ import random
 
 numbers = []
 num_size = 10
-
 for i in range(num_size):
     numbers.append(random.randint(-10, 10))
 print(numbers)
@@ -29,11 +28,11 @@ odd_numbers = 0
 for number in numbers:
     if number % 2 != 0:
         odd_numbers += number
+
 index3_num = numbers[3::3]
 mult_index_numbers = 1
 for i in index3_num:
     mult_index_numbers *= i
-
 mult_min_max_numbers = 0
 min_number_index = numbers.index(min(numbers))
 max_number_index = numbers.index(max(numbers))
