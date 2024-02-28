@@ -6,8 +6,6 @@
 # ■ Добуток елементів з кратними індексами 3;
 # ■ Добуток елементів між мінімальним та максимальним елементом;
 # ■ Суму елементів, що знаходяться між першим та останнім позитивними елементoм
-from functools import reduce
-from operator import mul
 import random
 
 numbers = []
@@ -31,9 +29,11 @@ odd_numbers = 0
 for number in numbers:
     if number % 2 != 0:
         odd_numbers += number
-
 index3_num = numbers[3::3]
-mult_index_numbers = reduce(mul, index3_num)
+mult_index_numbers = 1
+for i in index3_num:
+    mult_index_numbers *= i
+
 mult_min_max_numbers = 0
 min_number_index = numbers.index(min(numbers))
 max_number_index = numbers.index(max(numbers))
@@ -42,7 +42,9 @@ if min_number_index > max_number_index:
     min_number_index, max_number_index = max_number_index, min_number_index
 
 num_size_min_max = numbers[min_number_index + 1: max_number_index]
-mult_min_max_numbers = reduce(mul, num_size_min_max)
+mult_min_max_numbers = 1
+for i in num_size_min_max:
+    mult_min_max_numbers *= i
 
 first_positive_index = 0
 last_positive_index = 0
