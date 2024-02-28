@@ -33,6 +33,7 @@ index3_num = numbers[3::3]
 mult_index_numbers = 1
 for i in index3_num:
     mult_index_numbers *= i
+
 mult_min_max_numbers = 0
 min_number_index = numbers.index(min(numbers))
 max_number_index = numbers.index(max(numbers))
