@@ -12,6 +12,7 @@ import random
 
 numbers = []
 num_size = 10
+
 for i in range(num_size):
     numbers.append(random.randint(-10, 10))
 print(numbers)
@@ -36,22 +37,27 @@ mult_index_numbers = reduce(mul, index3_num)
 mult_min_max_numbers = 0
 min_number_index = numbers.index(min(numbers))
 max_number_index = numbers.index(max(numbers))
+
 if min_number_index > max_number_index:
     min_number_index, max_number_index = max_number_index, min_number_index
+
 num_size_min_max = numbers[min_number_index + 1: max_number_index]
 mult_min_max_numbers = reduce(mul, num_size_min_max)
 
 first_positive_index = 0
 last_positive_index = 0
 sum_positive_num = 0
+
 for i in range(num_size):
     if numbers[i] > 0:
         first_positive_index = i
         break
+
 for i in range(num_size - 1, -1, -1):
     if numbers[i] > 0:
         last_positive_index = i
         break
+
 for i in range(first_positive_index + 1, last_positive_index):
     sum_positive_num += numbers[i]
 
@@ -75,10 +81,13 @@ numbers_even = []
 numbers_odd = []
 numbers_negative = []
 numbers_positive = []
+
 for i in range(num_size):
     numbers.append(random.randint(-10, 10))
 print(numbers)
+
 i = 0
+
 for i in range(num_size):
     if numbers[i] % 2 == 0:
         numbers_even.append(numbers[i])
@@ -88,6 +97,7 @@ for i in range(num_size):
         numbers_negative.append(numbers[i])
     if numbers[i] > 0:
         numbers_positive.append(numbers[i])
+
 print(f"even: {numbers_even}")
 print(f"odd: {numbers_odd}")
 print(f"negative: {numbers_negative}")
