@@ -68,3 +68,16 @@ def consolidated_list(numbers: list[int], numbers2: list[int]) -> list[int]:
         numbers.append(number)
 
     return numbers
+
+# Task6
+# Напишіть функцію, яка обчислює ступінь кожного елемента списку цілих.
+# Значення для ступеня передається як параметр, список також передається як параметр.
+# Функція повертає новий список, який містить отримані результати.
+
+def pow_numbers(numbers: list[int], pow: int) -> list[int]:
+    new_numbers = []
+    for number in numbers:
+        new_number = number ** pow
+        new_numbers.append(new_number)
+    return new_numbers
+
