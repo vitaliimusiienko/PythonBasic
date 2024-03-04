@@ -94,3 +94,33 @@ choice = input("Enter what you want: \n"
                "Calculate the power of each element of a list of integers press 6: ")
 
 print(numbers)
+
+
+try:
+    match choice:
+        case "1":
+            result = mult_number(numbers)
+            print(result)
+        case "2":
+            result = min_nums(numbers)
+            print(f"Minimal: {result}")
+        case "3":
+            result = prime_numbers_list(numbers)
+            print(f"Prime numbers: {result}")
+        case "4":
+            number = int(input("Enter the number you want to delete: "))
+            result = delete_item(numbers, number)
+            print(f"Number of deleted objects: {result}")
+        case "5":
+            numbers2 = [random.randint(1, 20) for _ in range(10)]
+            print(numbers2)
+            result = consolidated_list(numbers, numbers2)
+            print(result)
+        case "6":
+            pow = int(input("Enter the power of the number: "))
+            result = pow_numbers(numbers, pow)
+            print(result)
+        case _:
+            print("Incorrect choice, enter a number from 1 to 6")
+except Exception as error:
+    print(f"Exception occurred: {error}")
