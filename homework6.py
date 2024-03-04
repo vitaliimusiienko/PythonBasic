@@ -81,3 +81,16 @@ def pow_numbers(numbers: list[int], pow: int) -> list[int]:
         new_numbers.append(new_number)
     return new_numbers
 
+
+numbers = [random.randint(1, 20) for _ in range(10)]
+
+
+choice = input("Enter what you want: \n"
+               "Calculate the product of the elements of a list of integers press 1: \n"
+               "Find the minimum in a list of integers press 2: \n"
+               "Determine the number of primes in a list of integers press 3: \n"
+               "Remove the given integer from the list press 4: \n"
+               "Get a list containing the elements of both lists press 5: \n"
+               "Calculate the power of each element of a list of integers press 6: ")
+
+print(numbers)
