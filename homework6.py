@@ -59,3 +59,12 @@ def delete_item(numbers: list[int], number: int) -> int:
             delete_item_counter += 1
 
     return delete_item_counter
+
+# Task5
+# Напишіть функцію, яка отримує два списки як параметр і повертає список,
+# що містить елементи обох списків
+def consolidated_list(numbers: list[int], numbers2: list[int]) -> list[int]:
+    for number in numbers2:
+        numbers.append(number)
+
+    return numbers
