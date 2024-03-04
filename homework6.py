@@ -46,3 +46,16 @@ def prime_numbers_list(numbers:  list[int]) -> int:
 
     print()
     return prime_numbers_counter
+
+# Task4
+# Напишіть функцію, яка видаляє зі списку ціле задане число.
+# З функції потрібно повернути кількість видаленних елементів.
+
+def delete_item(numbers: list[int], number: int) -> int:
+    delete_item_counter = 0
+    for item in numbers:
+        if item == number:
+            numbers.remove(item)
+            delete_item_counter += 1
+
+    return delete_item_counter
