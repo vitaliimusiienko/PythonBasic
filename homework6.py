@@ -83,6 +83,7 @@ def pow_numbers(numbers: list[int], pow: int) -> list[int]:
 
 
 numbers = [random.randint(1, 20) for _ in range(10)]
+numbers2 = [random.randint(1, 20) for _ in range(10)]
 
 
 choice = input("Enter what you want: \n"
@@ -112,7 +113,6 @@ try:
             result = delete_item(numbers, number)
             print(f"Number of deleted objects: {result}")
         case "5":
-            numbers2 = [random.randint(1, 20) for _ in range(10)]
             print(numbers2)
             result = consolidated_list(numbers, numbers2)
             print(result)
