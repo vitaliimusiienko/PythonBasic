@@ -26,6 +26,7 @@ def show_symbols(symbol, symbol_counter: int):
 symbol = "*"
 symbol_counter = 4
 show_symbols(symbol, symbol_counter)
+print(end="\n")
 # show_symbols("*", 4) -> show_symbols("*", 3)
 # show_symbols("*", 3) -> show_symbols("*", 2)
 # show_symbols("*", 2) -> show_symbols("*", 1)
@@ -46,7 +47,6 @@ number2 = 5
 
 if number1 > number2:
     number1, number2 = number2, number1
-print(end="\n")
 print(sum_numbers(number2))
 
 # sum_numbers(5) -> sum_numbers(4)
