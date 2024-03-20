@@ -54,7 +54,7 @@ with open("text2.txt", "r") as my_file:
     words_count_in_text2 = len(text_in_my_file.split())
 
 
-count_unacceptable_word = text_in_my_file.count(unacceptable_word)
+count_unacceptable_word = new_text.count(acceptable_word)
 
 
 print(f"Number of words with more than 7 letters: {words_count_in_text2}")
